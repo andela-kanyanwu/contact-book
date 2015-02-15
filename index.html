@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/contact-book.css">
+    <title>Contact Book</title>
+  </head>
+
+  <body>
+    <div>
+      <button id="add-contact">+</button>
+      <form>
+        <input type="text" placeholder="Name" id="contact-name"></input>
+        <input type="text" placeholder="Phone number" id="contact-number"></input>
+        <input type="text" placeholder="Email" id="contact-email"></input>
+        <input type="text" placeholder="Address" id="contact-address"></input>
+        <input type="text" placeholder="Birthday" id="contact-birthday"></input>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+    <div class="contact-list"></div>
+    <div class="error">Enter a name</div>
+
+     <script type="text/javascript" src="lib/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="scripts/contact-book.js"></script>
+  </body>
+</html>
