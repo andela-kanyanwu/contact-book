@@ -1,0 +1,73 @@
+.header{
+  top: 0;
+}
+#menu {
+  width: 99.6%;
+  position: relative;
+  border: 2px solid black;
+  top: 0;
+}
+#menu-title, #menu-button {
+  display: inline-block;
+  position: relative;
+}
+#menu-title {
+  width: 80%;
+}
+#menu-title h2 {
+  padding-left: 30px;
+  color: blue;
+}
+#menu-button {
+  width: 15%;
+  padding-top: 10px;
+}
+#menu-icon {
+  margin-left: 60px;  
+  cursor: pointer; 
+}
+#menu-icon img{
+  height: 40px;
+  width: 40px;
+}
+#toggle{
+  border: 2px solid black;
+}
+#toggle ul {
+  text-align: center;
+}
+#toggle ul li {
+  display: inline-block;
+  padding: 0 30px;
+}
+.page-container {
+  border: 2px solid black;
+  height: 450px;
+}
+ #contact-left-section, #contact-right-section {
+  display: inline-block;
+}
+#contact-left-section {
+  border: 2px solid red;
+  width: 49%;
+  height: 450px;
+}
+#contact-right-section {
+  border: 2px solid blue;
+  width: 49%;
+  height: 450px;
+}
+#add-contact-section {
+  border: 2px solid blue;
+  height: 300px;
+  margin: 30px;
+}
+#form-error {
+  border: 2px solid black;
+  height: 60px;
+  margin: 30px;
+}
+.footer {
+  border: 2px solid green; 
+  padding: 50px 0;
+}

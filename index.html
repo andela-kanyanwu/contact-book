@@ -6,19 +6,56 @@
   </head>
 
   <body>
-    <div>
-      <button id="add-contact">+</button>
-      <form>
-        <input type="text" placeholder="Name" id="contact-name"></input>
-        <input type="text" placeholder="Phone number" id="contact-number"></input>
-        <input type="text" placeholder="Email" id="contact-email"></input>
-        <input type="text" placeholder="Address" id="contact-address"></input>
-        <input type="text" placeholder="Birthday" id="contact-birthday"></input>
-        <button type="submit">Save</button>
-      </form>
+    <!--Contact book's header-->
+    <div class="header">
+      <!--Contact book's menu nav-->
+      <div id="menu">
+        <div id="menu-title">
+          <h2>Contact Book<h2>
+        </div> 
+        <div id="menu-button">
+         <div id="menu-icon">
+            <img src="images/menu-block.png">
+          </div>
+        </div>
+      </div>
+      <!--Contact book's toggle nav-->
+      <div id="toggle">
+        <ul>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Access API</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="contact-list"></div>
-    <div class="error">Enter a name</div>
+
+    <!--Contact book's main section-->
+    <div class="page-container">
+      <!--Contact book's left section-->
+      <div id="contact-left-section">
+        <!--Add contact section-->
+        <div id="add-contact-section">
+          <!--Contact form-->
+          <div id="contact-form">
+          </div>
+          <!--Message-->
+          <div id="contact-message">
+          </div>          
+        </div>
+        <!--Error section-->
+        <div id="form-error">
+        </div>
+      </div>
+      <!--Contact book's right section-->
+      <div id="contact-right-section">
+        <!--Contact list-->
+        <div>
+        </div>
+      </div>      
+    </div>
+
+    <!--Contact book's footer-->
+    <div class="footer">
+    </div>
 
      <script type="text/javascript" src="lib/jquery-2.1.3.js"></script>
     <script type="text/javascript" src="scripts/contact-book.js"></script>

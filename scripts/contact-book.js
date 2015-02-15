@@ -2,6 +2,7 @@ var contactBook = {
   //To hide contact form
   hideForm: $("form").hide(),
   errorHide: $('.error').hide(),
+  hideMenu: $("#toggle").hide(),
 
   //Load functions that initialize when document is ready
   initialize: function() {        
@@ -11,10 +12,12 @@ var contactBook = {
     this.editContact();
     this.deleteContact();
     this.errorHide;
+    this.toggleMenu();
+    this.hideMenu;
   },
 
   //Adds contacts to contact list
-  addContact: function() {    
+  addContact: function() {   
     $("#add-contact").click(function(){
       $("form").show();
       $("#contact-name").val("");
@@ -80,9 +83,13 @@ var contactBook = {
     $(document).on("click",'#delete-contact', function(event) {
       $(this).parent().remove();
     });
-  }
+  },
 
-   
+  toggleMenu: function(){
+    $("#menu-icon").click(function(){
+      $("#toggle").toggle();
+    })
+  }   
 
 };
 
