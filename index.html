@@ -30,25 +30,52 @@
 
     <!--Contact book's main section-->
     <div class="page-container">
+
       <!--Contact book's left section-->
       <div id="contact-left-section">
         <!--Add contact section-->
         <div id="add-contact-section">
           <!--Contact form-->
           <div id="contact-form">
+            <form>
+              <div>
+                <input type="text" placeholder="Name" id="contact-name"></input>
+              </div>
+              <div>
+                <input type="text" placeholder="Phone number" id="contact-number"></input>
+              </div>
+              <div>
+                <input type="text" placeholder="Email" id="contact-email"></input>
+              </div>
+              <div>
+                <input type="text" placeholder="Address" id="contact-address"></input>
+              </div>
+              <div>
+                <input type="text" placeholder="Birthday" id="contact-birthday"></input>
+              </div>
+              <button type="submit">Save</button>
+            </form>
           </div>
           <!--Message-->
           <div id="contact-message">
+            <div>
+              <img src="images/add-contact.png" id="add-contact">
+            </div>            
+            <div>
+              <p>Click the add button to add your contacts</p>
+            </div>
           </div>          
         </div>
         <!--Error section-->
         <div id="form-error">
+          <div class="error">Enter a name</div>
         </div>
       </div>
+
       <!--Contact book's right section-->
       <div id="contact-right-section">
         <!--Contact list-->
-        <div>
+        <div class="contact-list">
         </div>
       </div>      
     </div>
@@ -57,7 +84,8 @@
     <div class="footer">
     </div>
 
-     <script type="text/javascript" src="lib/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="lib/jquery-2.1.3.js"></script>
     <script type="text/javascript" src="scripts/contact-book.js"></script>
+    <script type="text/javascript" src="scripts/api.js"></script>
   </body>
 </html>

@@ -1,15 +1,17 @@
-.header{
+.header, #menu{
   top: 0;
+}
+#menu, #menu-title, #menu-button {
+  position: relative;
+}
+#menu, #toggle, .page-container, #form-error {
+   border: 2px solid black;
 }
 #menu {
-  width: 99.6%;
-  position: relative;
-  border: 2px solid black;
-  top: 0;
+  width: 99.6%;  
 }
-#menu-title, #menu-button {
+#menu-title, #menu-button, #toggle ul li, #contact-left-section, #contact-right-section {
   display: inline-block;
-  position: relative;
 }
 #menu-title {
   width: 80%;
@@ -30,31 +32,23 @@
   height: 40px;
   width: 40px;
 }
-#toggle{
-  border: 2px solid black;
-}
 #toggle ul {
   text-align: center;
 }
 #toggle ul li {
-  display: inline-block;
   padding: 0 30px;
 }
 .page-container {
-  border: 2px solid black;
   height: 450px;
-}
- #contact-left-section, #contact-right-section {
-  display: inline-block;
 }
 #contact-left-section {
   border: 2px solid red;
-  width: 49%;
+  width: 45%;
   height: 450px;
 }
 #contact-right-section {
   border: 2px solid blue;
-  width: 49%;
+  width: 45%;
   height: 450px;
 }
 #add-contact-section {
@@ -63,11 +57,37 @@
   margin: 30px;
 }
 #form-error {
-  border: 2px solid black;
   height: 60px;
   margin: 30px;
 }
 .footer {
   border: 2px solid green; 
   padding: 50px 0;
+}
+#contact-form, #contact-message {
+  width: 100%;
+  display: block;
+}
+#contact-message div p {
+  position: absolute;
+  color: blue;
+}
+#contact-message div img {
+  position: absolute;
+  height: 50px;
+  margin-left: 450px;
+  cursor: pointer;
+}
+#contact-form form {
+  margin-top: 40px;
+  position: absolute;
+}
+.error {
+  position: absolute;
+}
+.contact-list {
+  position: absolute;
+}
+.contact-list ul li {
+  list-style-type: none;
 }
